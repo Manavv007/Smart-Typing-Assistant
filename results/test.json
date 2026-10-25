@@ -1,0 +1,170 @@
+{
+  "split": "test",
+  "oov_rate": 0.01376573526207278,
+  "vocab_size": 17968,
+  "train_tokens": 2148960,
+  "ranking": [
+    {
+      "top1": 0.048533408633652186,
+      "top3": 0.1034202816702552,
+      "mrr@3": 0.07138823197204398,
+      "coverage": 1.0,
+      "positions": 28331,
+      "latency_ms_mean": 0.03576863859342294,
+      "latency_ms_p95": 0.05629999986922485,
+      "ksr": 0.41397215010620725,
+      "name": "Unigram",
+      "ngrams": 17968
+    },
+    {
+      "top1": 0.16459002506088738,
+      "top3": 0.27245773181320815,
+      "mrr@3": 0.2108585412916332,
+      "coverage": 0.9996470297553917,
+      "positions": 28331,
+      "latency_ms_mean": 0.06246501711961618,
+      "latency_ms_p95": 0.11630000017248676,
+      "ksr": 0.4634411139957517,
+      "name": "Bigram, no backoff",
+      "ngrams": 342727
+    },
+    {
+      "top1": 0.18559175461508595,
+      "top3": 0.28555292788817904,
+      "mrr@3": 0.22877766404291827,
+      "coverage": 0.8920264021742967,
+      "positions": 28331,
+      "latency_ms_mean": 0.050030528397131735,
+      "latency_ms_p95": 0.10299999985363684,
+      "ksr": 0.3579419400519235,
+      "name": "Trigram, no backoff",
+      "ngrams": 1160752
+    },
+    {
+      "top1": 0.16459002506088738,
+      "top3": 0.2725989199110515,
+      "mrr@3": 0.21091736966573457,
+      "coverage": 1.0,
+      "positions": 28331,
+      "latency_ms_mean": 0.10008176555662811,
+      "latency_ms_p95": 0.16709999999875436,
+      "ksr": 0.5170167571394855,
+      "name": "Bigram + backoff",
+      "ngrams": 342727
+    },
+    {
+      "top1": 0.20232254420952314,
+      "top3": 0.32137940771592954,
+      "mrr@3": 0.2536032379137057,
+      "coverage": 1.0,
+      "positions": 28331,
+      "latency_ms_mean": 0.14925438918378622,
+      "latency_ms_p95": 0.262999999904423,
+      "ksr": 0.5348595704507906,
+      "name": "Trigram + backoff",
+      "ngrams": 1160752
+    },
+    {
+      "top1": 0.20196957396491474,
+      "top3": 0.3200381207864177,
+      "mrr@3": 0.2528855317496687,
+      "coverage": 1.0,
+      "positions": 28331,
+      "latency_ms_mean": 0.145912837528902,
+      "latency_ms_p95": 0.2589000000625674,
+      "ksr": 0.5332546613169695,
+      "name": "Trigram Stupid Backoff",
+      "ngrams": 1160752
+    },
+    {
+      "top1": 0.16448413398750486,
+      "top3": 0.27235184073982566,
+      "mrr@3": 0.21080559575494207,
+      "coverage": 1.0,
+      "positions": 28331,
+      "latency_ms_mean": 0.15362216300147155,
+      "latency_ms_p95": 0.2658999999312073,
+      "ksr": 0.5184800566438518,
+      "name": "Bigram Kneser-Ney",
+      "ngrams": 342727
+    },
+    {
+      "top1": 0.20465214782393845,
+      "top3": 0.32490911016201335,
+      "mrr@3": 0.2566152506676973,
+      "coverage": 1.0,
+      "positions": 28331,
+      "latency_ms_mean": 0.2799153436175905,
+      "latency_ms_p95": 0.5206000000725908,
+      "ksr": 0.5381165919282511,
+      "name": "Trigram Kneser-Ney",
+      "ngrams": 1160752
+    },
+    {
+      "top1": 0.2116762556916452,
+      "top3": 0.3310154953937383,
+      "mrr@3": 0.26311578600590085,
+      "coverage": 1.0,
+      "positions": 28331,
+      "latency_ms_mean": 0.20359474780261938,
+      "latency_ms_p95": 0.3431000000091444,
+      "ksr": 0.5375973566202501,
+      "name": "4-gram Stupid Backoff",
+      "ngrams": 2271157
+    },
+    {
+      "top1": 0.21690021531184922,
+      "top3": 0.33729836574776745,
+      "mrr@3": 0.2690398032779119,
+      "coverage": 1.0,
+      "positions": 28331,
+      "latency_ms_mean": 0.35934796159729887,
+      "latency_ms_p95": 0.7401000000299973,
+      "ksr": 0.5433089450082605,
+      "name": "4-gram Kneser-Ney",
+      "ngrams": 2271157
+    }
+  ],
+  "perplexity": [
+    {
+      "model": "Laplace",
+      "order": 1,
+      "perplexity": 408.7794168564628
+    },
+    {
+      "model": "Kneser-Ney",
+      "order": 1,
+      "perplexity": 408.2587697936668
+    },
+    {
+      "model": "Laplace",
+      "order": 2,
+      "perplexity": 456.213874673988
+    },
+    {
+      "model": "Kneser-Ney",
+      "order": 2,
+      "perplexity": 111.20767991198801
+    },
+    {
+      "model": "Laplace",
+      "order": 3,
+      "perplexity": 1932.4921980968586
+    },
+    {
+      "model": "Kneser-Ney",
+      "order": 3,
+      "perplexity": 84.65550624609793
+    },
+    {
+      "model": "Laplace",
+      "order": 4,
+      "perplexity": 3357.468613237354
+    },
+    {
+      "model": "Kneser-Ney",
+      "order": 4,
+      "perplexity": 80.1171339939039
+    }
+  ]
+}
